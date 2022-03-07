@@ -18,11 +18,13 @@ public class desafioNumber {
 
 				DecimalFormat df = new DecimalFormat("R$ #,##0.00"); 
 				String valorFormatado =  df.format(bg);
-				System.out.println("10% de " + "R$ " + entradaValor + " � " + valorFormatado);
+				System.out.println("10% de " + "R$ " + entradaValor + " é " + valorFormatado);
 			
 			
 			}catch(InputMismatchException e) {
-				System.out.println("Entrada Inv�lida, por favor coloque apenas n�meros!");
+				System.out.println("Entrada Inválida, por favor coloque apenas números!");
+			}finally {
+				System.out.println("Operação Concluída");
 			}
 		
 	}
