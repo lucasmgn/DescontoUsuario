@@ -13,6 +13,10 @@ public class desafioNumber {
 				System.out.print("Valor do produto: ");
 				double entradaValor = input.nextDouble();
 				
+				if(entradaValor < 0) {
+					entradaValor = entradaValor * (-1);	
+				}
+
 				BigDecimal bg = new BigDecimal(entradaValor);
 				bg = bg.multiply(new BigDecimal(0.1));
 
@@ -20,7 +24,7 @@ public class desafioNumber {
 				String valorFormatado =  df.format(bg);
 				System.out.println("10% de " + "R$ " + entradaValor + " é " + valorFormatado);
 			
-				System.out.println("Operação Concluída");
+			
 			}catch(InputMismatchException e) {
 				System.out.println("Entrada Inválida, por favor coloque apenas números!");
 			}
