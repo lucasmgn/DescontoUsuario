@@ -20,11 +20,9 @@ public class desafioNumber {
 				String valorFormatado =  df.format(bg);
 				System.out.println("10% de " + "R$ " + entradaValor + " é " + valorFormatado);
 			
-			
+				System.out.println("Operação Concluída");
 			}catch(InputMismatchException e) {
 				System.out.println("Entrada Inválida, por favor coloque apenas números!");
-			}finally {
-				System.out.println("Operação Concluída");
 			}
 		
 	}
